@@ -116,176 +116,6 @@
         </main>
     </section> 
 
-    <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <title>Contactos | Dados da Esperança</title>
-    <meta name="description" content="Entre em contacto com a equipa do Dados da Esperança. Envie uma mensagem ou localize o nosso centro de atendimento em Luanda.">
-    
-    <link rel="stylesheet" href="css/contactos.css">
-    <link rel="stylesheet" href="css/global.css">
-    <script src="script/jquery-3.7.1.min.js"></script>
-    <script src="script/script.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VNM11LJ42"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9VNM11LJ42');
-    </script>
-</head>
-<body>
-
-    <header id="menuTop">
-        <div id="menuTopLeft">
-            <img src="img/logo.png" alt="Logo Dados da Esperança" width="50" height="50">
-            <h1>Dados da Esperança</h1>
-        </div>
-        
-        <input type="checkbox" id="menuToggle">
-        
-        <div id="headerActions">
-            <label for="menuToggle" id="menuHamburguer">☰</label>
-        </div>
-        
-        <nav id="menuMobile">
-            <a href="index.html">Home</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contactos.html">Contactos</a>
-            <button id="darkModeToggle">Modo Escuro 🌙</button>
-        </nav>
-    </header>
-    
-    <section id="conteudoDoacao">
-        <main id="conteudoPagina">
-            <div class="introducaoPagina">
-                <h2 class="tituloPagina">Fale Connosco</h2>
-                <p class="subtituloPagina">Estamos aqui para esclarecer as suas dúvidas e receber o seu apoio em Angola.</p>
-            </div>
-            
-            <div class="gridContactos">
-     
-                <div class="colunaInfo">
-                    <h3>Informações de Contacto</h3>
-                    <div class="itemContacto">
-                        <p>📍 <strong>Endereço:</strong><br> Avenida Comandante Valódia, Ingombota, Luanda - Angola</p>
-                    </div>
-                    <div class="itemContacto">
-                        <p>📞 <strong>Telefones:</strong><br> +244 923 000 000<br> +244 912 000 000 (Emergências)</p>
-                    </div>
-                    <div class="itemContacto">
-                        <p>✉ <strong>E-mail:</strong><br> contacto@dadosesperanca.co.ao</p>
-                    </div>
-                    <div class="itemContacto">
-                        <p>🕒 <strong>Horário de Atendimento:</strong><br> Segunda a Sexta: 08h00 - 18h00<br> Sábados: 08h00 - 13h00</p>
-                    </div>
-                </div>
-
-                <div class="colunaFormulario">
-                    <h3>Envie uma Mensagem</h3>
-                    <form id="formContacto">
-                        <div class="campoGrupo">
-                            <label for="nome">Nome Completo</label>
-                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                            <span class="erro-feedback" id="erroNome"></span>
-                        </div>
-                        
-                        <div class="campoGrupo">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-                            <span class="erro-feedback" id="erroEmail"></span>
-                        </div>
-                        
-                        <div class="campoGrupo">
-                            <label for="assunto">Assunto</label>
-                            <input type="text" id="assunto" name="assunto" placeholder="Ex: Parceria, Dúvida, Suporte" required>
-                            <span class="erro-feedback" id="erroAssunto"></span>
-                        </div>
-                        
-                        <div class="campoGrupo">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem detalhada..." required></textarea>
-                            <span class="erro-feedback" id="erroMensagem"></span>
-                        </div>
-                        
-                        <button type="submit" class="btnEnviar">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
-
-            <div id="mapaContainerGlobal">
-                <h3>A Nossa Localização</h3>
-                <div id="map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126154.51617402947!2d13.1593856!3d-8.8524288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f15998246f49%3A0x8673322a36a28243!2sLuanda!5e0!3m2!1spt-PT!2sao!4v1710000000000!5m2!1spt-PT!2sao" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </main>
-    </section>
-    
-    <footer id="footerDoacao">
-        <div class="footerDoacaoBox">
-            <h3>Dados da Esperança</h3>
-            <p>A sua ajuda é fundamental. Fale connosco.</p>
-            <div class="redes-sociais">
-                <a href="#">📘 Facebook</a>
-                <a href="#">📸 Instagram</a>
-            </div>
-        </div>
-        <div class="footerDoacaoBox">
-            <h3>Links Rápidos</h3>
-            <a href="index.html">Home</a>
-            <a href="faq.html">FAQ</a>
-            <a href="mapadosite.html">Mapa do Site</a>
-            <a href="termos.html">Termos e Condições</a>
-            <a href="privacidade.html">Política De Privacidade</a>
-        </div>
-        <div class="footerDoacaoBox">
-            <h3>Contactos</h3>
-            <p>📞 +244 923 000 000</p>
-            <p>📍 Luanda - Angola</p>
-        </div>
-    </footer>
-    
-    <button id="btnTopo" title="Voltar ao topo">▲</button>
-    
-
-    <!-- Modal de Termos e Privacidade -->
-    <div id="modalTermos" class="modal-overlay">
-        <div class="modal-content">
-            <h2>Bem-vindo ao Dados da Esperança</h2>
-            <p>Para continuar a utilizar esta plataforma, é necessário aceitar os nossos Termos de Utilização e a Política de Privacidade.</p>
-            
-            <div class="modal-checkbox-group">
-                <label class="modal-checkbox-item">
-                    <input type="checkbox" id="checkTermos">
-                    <span>Li e aceito os <a href="termos.html" target="_blank">Termos e Condições</a></span>
-                </label>
-                
-                <label class="modal-checkbox-item">
-                    <input type="checkbox" id="checkPrivacidade">
-                    <span>Li e aceito a <a href="privacidade.html" target="_blank">Política de Privacidade</a></span>
-                </label>
-            </div>
-            
-            <button id="btnContinuar" class="btn-continuar">Continuar</button>
-        </div>
-    </div>
-
-</body>
-</html>
-
     <footer id="footerDoacao">
         <div class="footerDoacaoBox">
             <h3>Dados da Esperança</h3>
@@ -312,5 +142,33 @@
     
     <button id="btnTopo" title="Voltar ao topo">▲</button>
         
+    <div id="modalTermos" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Bem-vindo ao Dados da Esperança</h2>
+            <p>Para continuar a utilizar esta plataforma, é necessário aceitar os nossos Termos e Condições e a Política de Privacidade.</p>
+            
+            <div class="modal-checkbox-group">
+                <label class="modal-checkbox-item">
+                    <input type="checkbox" id="checkTermos">
+                    <span>Li e aceito os <a href="termos.html" target="_blank">Termos e Condiçóes</a></span>
+                </label>
+                
+                <label class="modal-checkbox-item">
+                    <input type="checkbox" id="checkPrivacidade">
+                    <span>Li e aceito a <a href="privacidade.html" target="_blank">Política de Privacidade</a></span>
+                </label>
+            </div>
+            
+            <button id="btnContinuar" class="btn-continuar">Continuar</button>
+        </div>
+    </div>
+
 </body>
 </html>
+
+
+
+        
+    </section> 
+
+  
