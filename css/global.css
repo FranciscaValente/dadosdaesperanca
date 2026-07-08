@@ -82,6 +82,10 @@ h1, h2, h3 {
     gap: 10px; 
 }
 
+#menuToggle {
+    display: none;
+}
+
 #menuMobile a, #darkModeToggle {
     color: #ffffff;
     text-decoration: none;
