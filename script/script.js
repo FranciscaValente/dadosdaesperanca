@@ -181,5 +181,42 @@ $(document).ready(function() {
     validarFormulario('#formContacto');
     validarFormulario('#formAgendar');
 
+    var modal = $('#modalTermos');
+    var checkTermos = $('#checkTermos');
+    var checkPrivacidade = $('#checkPrivacidade');
+    var btnContinuar = $('#btnContinuar');
+
+    if (modal.length > 0) {
+        if (!localStorage.getItem('termosAceitos')) {
+            modal.css('display', 'flex');
+            $('body').css('overflow', 'hidden'); 
+        }
+        function validarChecks() {
+            if (checkTermos.is(':checked') && checkPrivacidade.is(':checked')) {
+                btnContinuar.addClass('active');
+            } else {
+                btnContinuar.removeClass('active');
+            }
+        }
+
+        checkTermos.on('change', validarChecks);
+        checkPrivacidade.on('change', validarChecks);
+
+        btnContinuar.on('click', function() {
+            if ($(this).hasClass('active')) {
+                localStorage.setItem('termosAceitos', 'true');
+                modal.fadeOut(300, function() {
+                    $('body').css('overflow', 'auto');
+                });
+            }
+        });
+    }
+});
+
+    
+    
+    
+    
+    
     initMap();
 });
