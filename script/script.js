@@ -160,37 +160,22 @@ $(document).ready(function() {
         });
     }
 
-    function initMap() {
-        var mapElement = $('#map');
-        if (mapElement.length === 0) return;
-
-        var luandaCoords = [-8.8147, 13.2302]; 
-        
-        var map = L.map('map').setView(luandaCoords, 15);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-
-        L.marker(luandaCoords).addTo(map)
-            .bindPopup('<b>Dados da Esperança</b><br>Avenida Comandante Valódia, Luanda.')
-            .openPopup();
-    }
-
     initCarousel();
     validarFormulario('#formContacto');
     validarFormulario('#formAgendar');
-
+    
     var modal = $('#modalTermos');
     var checkTermos = $('#checkTermos');
     var checkPrivacidade = $('#checkPrivacidade');
     var btnContinuar = $('#btnContinuar');
 
     if (modal.length > 0) {
+
         if (!localStorage.getItem('termosAceitos')) {
             modal.css('display', 'flex');
             $('body').css('overflow', 'hidden'); 
         }
+
         function validarChecks() {
             if (checkTermos.is(':checked') && checkPrivacidade.is(':checked')) {
                 btnContinuar.addClass('active');
