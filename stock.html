@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Níveis de Stock | Dados da Esperança</title>
+    <meta name="description" content="Consulte em tempo real o stock de sangue nos hospitais de Luanda.">
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/servicos.css">
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/script.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VNM11LJ42"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9VNM11LJ42');
+    </script>
+</head>
+<body>
+
+    <header id="menuTop">
+        <div id="menuTopLeft">
+            <img src="img/logo.png" alt="Logo Dados da Esperança" width="50" height="50">
+            <h1>Dados da Esperança</h1>
+        </div>
+        <input type="checkbox" id="menuToggle">
+        <div id="headerActions">
+            <label for="menuToggle" id="menuHamburguer">☰</label>
+        </div>
+        <nav id="menuMobile">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contactos.html">Contactos</a>
+            <button id="darkModeToggle">Modo Escuro 🌙</button>
+        </nav>
+    </header>
+    
+    <section id="conteudoDoacao">
+        <main id="conteudoPagina" class="containerCentralizado">
+            
+            <div class="introducaoPagina">
+                <h2 class="tituloPagina">Níveis de Stock de Sangue</h2>
+                <p class="subtituloPagina">Estado geral das reservas nos hospitais da província de Luanda.</p>
+            </div>
+            
+            <div class="stock-visual" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <strong>Tipo O+ (Hospital Josina Machel)</strong>
+                        <span>75% (Estável)</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-preenchida" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <strong>Tipo A- (Hospital Américo Boavida)</strong>
+                        <span style="color: #ff4444; font-weight: bold;">15% (Crítico ⚠️)</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-preenchida critico" style="width: 15%;"></div>
+                    </div>
+                </div>
+
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <strong>Tipo O- (Maternidade Lucrécia Paim)</strong>
+                        <span style="color: #ff4444; font-weight: bold;">30% (Crítico ⚠️)</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-preenchida critico" style="width: 30%;"></div>
+                    </div>
+                </div>
+
+                <div class="stock-item">
+                    <div class="stock-info">
+                        <strong>Tipo B+ (Hospital Geral de Luanda)</strong>
+                        <span>90% (Excelente)</span>
+                    </div>
+                    <div class="barra-fundo">
+                        <div class="barra-preenchida" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="servicos.html" class="btnVoltar">⬅ Voltar aos Serviços</a>
+
+        </main>
+    </section>
+    
+    <footer id="footerDoacao">
+        <div class="footerDoacaoBox">
+            <h3>Dados da Esperança</h3>
+            <p>Conectando dadores a vidas necessitadas.</p>
+            <div class="redes-sociais">
+                <a href="#">📘 Facebook</a>
+                <a href="#">📸 Instagram</a>
+            </div>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Links Rápidos</h3>
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mapadosite.html">Mapa do Site</a>
+            <a href="termos.html">Termos e Condições</a>
+            <a href="privacidade.html">Política De Privacidade</a>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Contactos</h3>
+            <p>📞 +244 923 000 000</p>
+            <p>📍 Luanda - Angola</p>
+        </div>
+    </footer>
+    
+    <button id="btnTopo" title="Voltar ao topo">▲</button>
+    
+</body>
+</html>

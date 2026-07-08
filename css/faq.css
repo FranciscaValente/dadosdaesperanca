@@ -1,0 +1,106 @@
+.faqContainer {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.faqTituloPrincipal {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.faqSubtitulo {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 16px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+}
+
+.faqLista {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faqCard {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  
+    margin-bottom: 15px; 
+    box-sizing: border-box;
+}
+
+.faqCard:last-child {
+    margin-bottom: 0;
+}
+.faqHeader {
+    padding: 22px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.faqHeader:hover {
+    background-color: var(--border-color);
+}
+
+.faqHeader h3 {
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0;
+    padding-right: 15px; 
+}
+
+
+.faqIcon {
+    font-size: 14px;
+    color: var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+
+.faqContent {
+    padding: 0 25px 22px 25px; 
+    display: none; 
+}
+
+.faqContent p {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.faqCard.active {
+    border-color: var(--accent-color);
+    box-shadow: 0 6px 18px var(--shadow-color);
+}
+
+@media (min-width: 769px) {
+    .faqLista {
+        max-width: 800px; 
+    }
+
+    .faqHeader h3 {
+        font-size: 18px; 
+    }
+
+    .faqContent p {
+        font-size: 15px;
+    }
+}

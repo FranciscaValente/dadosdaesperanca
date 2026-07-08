@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Hospital Geral de Luanda | Dados da Esperança</title>
+    <meta name="description" content="Detalhes sobre o Hospital Geral de Luanda, parceiro da plataforma Dados da Esperança para doação de sangue em Angola.">
+    
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/script.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VNM11LJ42"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9VNM11LJ42');
+    </script>
+
+</head>
+<body>
+
+    <header id="menuTop">
+        <div id="menuTopLeft">
+            <img src="img/logo.png" alt="Logo Dados da Esperança" width="50" height="50">
+            <h1>Dados da Esperança</h1>
+        </div>
+        <input type="checkbox" id="menuToggle">
+        <div id="headerActions">
+            <label for="menuToggle" id="menuHamburguer">☰</label>
+        </div>
+        <nav id="menuMobile">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contactos.html">Contactos</a>
+            <button id="darkModeToggle">Modo Escuro 🌙</button>
+        </nav>
+    </header>
+
+    <section id="conteudoDoacao">
+        <main class="detalhesHospital">
+            <h2>Hospital Geral de Luanda</h2>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">Parceiro oficial da plataforma Dados da Esperança para doação de sangue.</p>
+
+            <div class="infoBox">
+                <h3>📍 Localização</h3>
+                <p><strong>Endereço:</strong> Avenida Comandante Valódia, Maianga, Luanda - Angola</p>
+                <p><strong>Distrito:</strong> Maianga</p>
+                <p><strong>Província:</strong> Luanda</p>
+            </div>
+
+            <div class="infoBox">
+                <h3>📞 Contacto</h3>
+                <p><strong>Telefone Principal:</strong> +244 923 000 000</p>
+                <p><strong>Telefone Emergências:</strong> +244 912 000 000</p>
+                <p><strong>E-mail:</strong> contacto@hospitalgeralluanda.ao</p>
+            </div>
+
+            <div class="infoBox">
+                <h3>🩸 Tipos Sanguíneos Necessários</h3>
+                <p>Atualmente, o Hospital Geral de Luanda tem necessidade urgente de:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>O-</strong> (Dador Universal) - Urgente</li>
+                    <li><strong>O+</strong> - Necessário</li>
+                    <li><strong>A-</strong> - Necessário</li>
+                </ul>
+            </div>
+
+            <div class="infoBox">
+                <h3>🕒 Horário de Funcionamento</h3>
+                <div class="horarios">
+                    <div class="horario-item">
+                        <strong>Segunda a Sexta:</strong>
+                        <p>08h00 - 18h00</p>
+                    </div>
+                    <div class="horario-item">
+                        <strong>Sábados:</strong>
+                        <p>08h00 - 13h00</p>
+                    </div>
+                    <div class="horario-item">
+                        <strong>Domingos:</strong>
+                        <p>Fechado</p>
+                    </div>
+                    <div class="horario-item">
+                        <strong>Emergências 24h:</strong>
+                        <p>Atendimento permanente</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infoBox">
+                <h3>ℹ️ Sobre o Hospital</h3>
+                <p>O Hospital Geral de Luanda é uma das principais instituições de saúde em Angola, oferecendo serviços de emergência, cirurgia e transfusão de sangue. Através da parceria com a plataforma Dados da Esperança, facilitamos o agendamento de doações para garantir stock suficiente e salvar vidas.</p>
+            </div>
+
+            <div class="infoBox">
+                <h3>✅ Requisitos para Doadores</h3>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Ter entre 18 e 65 anos</li>
+                    <li>Pesar no mínimo 50 kg</li>
+                    <li>Estar em bom estado de saúde</li>
+                    <li>Não ter doado sangue há menos de 56 dias</li>
+                    <li>Trazer documento de identificação válido</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="btnPadrao" onclick="location.href='agendar.html'">Agendar Doação Agora</button>
+                <button class="btnServico" onclick="location.href='index.html'" style="margin-left: 10px; background: var(--text-muted);">Voltar à Home</button>
+            </div>
+        </main>
+    </section>
+
+    <footer id="footerDoacao">
+        <div class="footerDoacaoBox">
+            <h3>Dados da Esperança</h3>
+            <p>Conectando dadores e hospitais para salvar vidas.</p>
+            <div class="redes-sociais">
+                <a href="#">📘 Facebook</a>
+                <a href="#">📸 Instagram</a>
+            </div>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Links Rápidos</h3>
+            <a href="index.html">Home</a>
+            <a href="contactos.html">Contactos</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Contactos</h3>
+            <p>📞 +244 923 000 000</p>
+            <p>📍 Luanda - Angola</p>
+        </div>
+    </footer>
+
+    <button id="btnTopo" title="Voltar ao topo">▲</button>
+
+</body>
+</html>

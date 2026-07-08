@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="css/global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Serviços | Dados da Esperança</title>
+    <meta name="description" content="Conheça os serviços do Dados da Esperança. Agende a sua doação de sangue, localize brigadas móveis e consulte bancos de sangue em Luanda.">
+    
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/servicos.css">
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/script.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VNM11LJ42"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9VNM11LJ42');
+    </script>
+</head>
+<body>
+
+    <header id="menuTop">
+        <div id="menuTopLeft">
+            <img src="img/logo.png" alt="Logo Dados da Esperança" width="50" height="50">
+            <h1>Dados da Esperança</h1>
+        </div>
+        
+        <input type="checkbox" id="menuToggle">
+        
+        <div id="headerActions">
+            <label for="menuToggle" id="menuHamburguer">☰</label>
+        </div>
+        
+        <nav id="menuMobile">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contactos.html">Contactos</a>
+            <button id="darkModeToggle">Modo Escuro 🌙</button>
+        </nav>
+    </header>
+    
+    <section id="conteudoDoacao">
+        <main id="conteudoPagina" class="containerCentralizado">
+            
+            <div class="introducaoPagina">
+                <h2 class="tituloPagina">Nossos Serviços</h2>
+                <p class="subtituloPagina">Facilitamos o processo de doação de sangue para conectar corações dadores aos hospitais que mais necessitam em Angola.</p>
+            </div>
+            
+            <div class="gridServicos">
+                
+                <div class="servicoCard">
+                    <div class="servicoIcone">📅</div>
+                    <h3>Agendamento de Doações</h3>
+                    <p>Escolha o hospital dador mais próximo, selecione o dia e a hora que melhor lhe convém e evite filas de espera.</p>
+                    <a href="agendar.html" class="btnServico">Agendar Agora</a>
+                </div>
+
+                <div class="servicoCard">
+                    <div class="servicoIcone">🚐</div>
+                    <h3>Brigadas Móveis</h3>
+                    <p>Acompanhe os itinerários e localizações das nossas carrinhas de recolha de sangue em Luanda e arredores.</p>
+                    <a href="brigadas.html" class="btnServico">Ver Rotas</a>
+                </div>
+
+                <div class="servicoCard">
+                    <div class="servicoIcone">🏥</div>
+                    <h3>Bancos de Sangue</h3>
+                    <p>Consulte em tempo real os níveis de stock de sangue dos principais hospitais e maternidades da província.</p>
+                    <a href="stock.html" class="btnServico">Consultar Stock</a>
+                </div>
+
+
+            </div>
+
+        </main>
+    </section>
+    
+    <footer id="footerDoacao">
+        <div class="footerDoacaoBox">
+            <h3>Dados da Esperança</h3>
+            <p>Conectando dadores a vidas necessitadas.</p>
+            <div class="redes-sociais">
+                <a href="#">📘 Facebook</a>
+                <a href="#">📸 Instagram</a>
+            </div>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Links Rápidos</h3>
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mapadosite.html">Mapa do Site</a>
+            <a href="termos.html">Termos e Condições</a>
+            <a href="privacidade.html">Política De Privacidade</a>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Contactos</h3>
+            <p>📞 +244 923 000 000</p>
+            <p>📍 Luanda - Angola</p>
+        </div>
+    </footer>
+    
+    <button id="btnTopo" title="Voltar ao topo">▲</button>
+    
+</body>
+</html>

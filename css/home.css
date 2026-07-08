@@ -1,0 +1,176 @@
+#bannerDoacao {
+    width: 100%;
+    min-height: 500px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/banner.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 5%;
+}
+
+#bannerDoacaoConteudo {
+    max-width: 650px;
+    background: rgba(26, 58, 82, 0.95); 
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: #ffffff;
+}
+
+#bannerDoacaoConteudo h2 { 
+    color: #ffffff; 
+    font-size: 2.2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#bannerIndicadores {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 30px; 
+    margin-bottom: 20px;
+}
+
+.bannerIndicadorCard {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.bannerIndicadorCard h3 {
+    font-size: 1.8rem;
+    color: #FFD700;
+}
+
+#conteudoDoacao {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+
+#conteudoDoacaoLeft { width: 30%; }
+#conteudoDoacaoRight { width: 70%; }
+
+#conteudoDoacao h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 8px;
+}
+
+.grupoSanguineo {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.grupoSanguineo h3 { color: var(--accent-color); font-size: 1.4rem; margin-bottom: 5px; }
+
+.classHospitalPopular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px; 
+}
+
+.classHospitalCard {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.classHospitalCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.classHospitalCard h3 {
+    padding: 15px 20px 5px 20px;
+    color: var(--primary-color);
+}
+
+.classHospitalCard p {
+    padding: 0 20px 15px 20px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.hospitalMetadados {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 20px 20px 20px;
+}
+
+.classHospitalCard span {
+    font-size: 0.9rem;
+}
+
+#homeEmergencia {
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 0 5%;
+    display: flex;
+    gap: 25px;
+}
+
+.homeEmergenciaCard {
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#homeEmergenciaBg1 { background: linear-gradient(135deg, var(--accent-color), var(--accent-hover)); }
+#homeEmergenciaBg2 { background: linear-gradient(135deg, var(--primary-color), var(--header-bg)); }
+
+@media (max-width: 768px) {
+    #conteudoDoacao {
+        flex-direction: column;
+    }
+    
+    #conteudoDoacaoLeft, #conteudoDoacaoRight {
+        width: 100%;
+    }
+    
+    .classHospitalPopular {
+        grid-template-columns: 1fr;
+    }
+    
+    #homeEmergencia {
+        flex-direction: column;
+    }
+}
+
+.detalhesHospital { max-width: 900px; margin: 40px auto; padding: 30px; background: var(--card-bg); border-radius: 10px; box-shadow: 0 4px 10px var(--shadow-color); }
+.detalhesHospital h2 { margin-bottom: 20px; color: var(--primary-color); }
+.infoBox { background: var(--bg-color); padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid var(--accent-color); }
+.infoBox h3 { color: var(--primary-color); margin-bottom: 10px; }
+.infoBox p { margin: 8px 0; }
+.horarios { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.horario-item { padding: 15px; background: var(--bg-color); border-radius: 8px; }
+.horario-item strong { color: var(--accent-color); }
+
+
+.detalhesHospital { max-width: 900px; margin: 40px auto; padding: 30px; background: var(--card-bg); border-radius: 10px; box-shadow: 0 4px 10px var(--shadow-color); }
+.detalhesHospital h2 { margin-bottom: 20px; color: var(--primary-color); }
+.infoBox { background: var(--bg-color); padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid var(--accent-color); }
+.infoBox h3 { color: var(--primary-color); margin-bottom: 10px; }
+.infoBox p { margin: 8px 0; }
+.horarios { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.horario-item { padding: 15px; background: var(--bg-color); border-radius: 8px; }
+.horario-item strong { color: var(--accent-color); }

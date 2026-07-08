@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+
+    <title>Agendar Doação de Sangue | Dados da Esperança</title>
+    <meta name="description" content="Faça o seu agendamento para doar sangue em Luanda. Escolha o hospital, data e hora para a sua doação.">
+    
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="script/script.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VNM11LJ42"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9VNM11LJ42');
+    </script>
+</head>
+<body>
+
+    <header id="menuTop">
+        <div id="menuTopLeft">
+            <img src="img/logo.png" alt="Logo Dados da Esperança" width="50" height="50">
+            <h1>Dados da Esperança</h1>
+        </div>
+        <input type="checkbox" id="menuToggle">
+        <div id="headerActions">
+            <label for="menuToggle" id="menuHamburguer">☰</label>
+        </div>
+        <nav id="menuMobile">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contactos.html">Contactos</a>
+            <button id="darkModeToggle">Modo Escuro 🌙</button>
+        </nav>
+    </header>
+    
+    <section id="conteudoDoacao">
+        <main id="conteudoPagina" class="containerCentralizado">
+            
+            <div class="introducaoPagina">
+                <h2 class="tituloPagina">Agendamento de Doações</h2>
+                <p class="subtituloPagina">Preencha os dados abaixo para marcar a sua doação e salvar vidas.</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="formAgendar" action="#" method="POST">
+                    <div class="grupo-input">
+                        <label for="hospital">Hospital / Posto de Recolha</label>
+                        <select id="hospital" name="hospital" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="ins">Instituto Nacional de Sangue (INS)</option>
+                            <option value="hgj">Hospital Geral de Luanda</option>
+                            <option value="hjos">Hospital Josina Machel</option>
+                        </select>
+                        <span class="erro-feedback" id="erroHospital"></span>
+                    </div>
+                    
+                    <div class="grupo-input">
+                        <label for="data">Data Desejada</label>
+                        <input type="date" id="data" name="data" required>
+                        <span class="erro-feedback"></span>
+                    </div>
+                    
+                    <button type="submit" class="btnServico">Confirmar Agendamento</button>
+                </form>
+            </div>
+                                
+            <a href="servicos.html" class="btnVoltar">⬅ Voltar aos Serviços</a>
+
+        </main>
+    </section>
+    
+    <footer id="footerDoacao">
+        <div class="footerDoacaoBox">
+            <h3>Dados da Esperança</h3>
+            <p>Conectando dadores a vidas necessitadas.</p>
+            <div class="redes-sociais">
+                <a href="#">📘 Facebook</a>
+                <a href="#">📸 Instagram</a>
+            </div>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Links Rápidos</h3>
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mapadosite.html">Mapa do Site</a>
+            <a href="termos.html">Termos e Condições</a>
+            <a href="privacidade.html">Política De Privacidade</a>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Contactos</h3>
+            <p>📞 +244 923 000 000</p>
+            <p>📍 Luanda - Angola</p>
+        </div>
+    </footer>
+    
+    <button id="btnTopo" title="Voltar ao topo">▲</button>
+    
+</body>
+</html>

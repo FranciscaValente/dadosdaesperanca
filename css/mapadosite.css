@@ -1,0 +1,76 @@
+.mapaContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.mapaCard {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.mapaCard:hover {
+    transform: translateY(-5px);
+}
+
+.mapaCard h3 {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.mapaCard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mapaCard ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.mapaCard ul li::before {
+    content: "🩸";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 0.9rem;
+}
+
+.mapaCard ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: inline-block;
+}
+
+.mapaCard ul li a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .mapaContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mapaContainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

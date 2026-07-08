@@ -1,0 +1,96 @@
+.carouselWrapper {
+    width: 100%;
+    position: relative;
+    padding: 0 50px;
+    margin: 40px 0;
+    box-sizing: border-box;
+}
+
+.carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carouselTrack {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.galeriaCard {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 0 10px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .galeriaCard {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .galeriaCard {
+        flex: 0 0 calc(100% - 20px);
+    }
+    .carouselWrapper {
+        padding: 0 10px;
+    }
+}
+
+.galeriaCard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeriaInfo {
+    padding: 20px;
+    text-align: center;
+}
+
+.galeriaInfo h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.galeriaInfo p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.navBtn, .carouselBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.navBtn:hover, .carouselBtn:hover {
+    background: var(--accent-hover);
+}
+
+.prevBtn { left: 0; }
+.nextBtn { right: 0; }

@@ -1,0 +1,70 @@
+.gridContactos {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.colunaInfo, .colunaFormulario {
+    flex: 1 1 45%; 
+    min-width: 300px; 
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-right: 0;
+}
+
+.campoGrupo {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#formContacto input, 
+#formContacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-sizing: border-box; 
+}
+
+#formContacto input.input-erro,
+#formContacto textarea.input-erro {
+    border-color: #ff4444;
+}
+
+.erro-feedback {
+    display: none;
+    color: #ff4444;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+#mapaContainerGlobal {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#mapaContainerGlobal h3 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+#mapaContainerGlobal #map {
+    height: 400px; 
+    width: 100%; 
+    max-width: 100%; 
+    border-radius: 12px; 
+    background: #eee;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Contactos | Dados da Esperança</title>
+    <meta name="description" content="Entre em contacto com a equipa do Dados da Esperança. Envie uma mensagem ou localize o nosso centro de atendimento em Luanda.">
+    
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script/script.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VNM11LJ42"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9VNM11LJ42');
+    </script>
+</head>
+<body>
+
+    <header id="menuTop">
+        <div id="menuTopLeft">
+            <img src="img/logo.png" alt="Logo Dados da Esperança" width="50" height="50">
+            <h1>Dados da Esperança</h1>
+        </div>
+        
+        <input type="checkbox" id="menuToggle">
+        
+        <div id="headerActions">
+            <label for="menuToggle" id="menuHamburguer">☰</label>
+        </div>
+        
+        <nav id="menuMobile">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contactos.html">Contactos</a>
+            <button id="darkModeToggle">Modo Escuro 🌙</button>
+        </nav>
+    </header>
+    
+    <section id="conteudoDoacao">
+        <main id="conteudoPagina">
+            <div class="introducaoPagina">
+                <h2 class="tituloPagina">Fale Connosco</h2>
+                <p class="subtituloPagina">Estamos aqui para esclarecer as suas dúvidas e receber o seu apoio em Angola.</p>
+            </div>
+            
+            <div class="gridContactos">
+     
+                <div class="colunaInfo">
+                    <h3>Informações de Contacto</h3>
+                    <div class="itemContacto">
+                        <p>📍 <strong>Endereço:</strong><br> Avenida Comandante Valódia, Ingombota, Luanda - Angola</p>
+                    </div>
+                    <div class="itemContacto">
+                        <p>📞 <strong>Telefones:</strong><br> +244 923 000 000<br> +244 912 000 000 (Emergências)</p>
+                    </div>
+                    <div class="itemContacto">
+                        <p>✉ <strong>E-mail:</strong><br> contacto@dadosesperanca.co.ao</p>
+                    </div>
+                    <div class="itemContacto">
+                        <p>🕒 <strong>Horário de Atendimento:</strong><br> Segunda a Sexta: 08h00 - 18h00<br> Sábados: 08h00 - 13h00</p>
+                    </div>
+                </div>
+
+                <div class="colunaFormulario">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="formContacto">
+                        <div class="campoGrupo">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                            <span class="erro-feedback" id="erroNome"></span>
+                        </div>
+                        
+                        <div class="campoGrupo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                            <span class="erro-feedback" id="erroEmail"></span>
+                        </div>
+                        
+                        <div class="campoGrupo">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Ex: Parceria, Dúvida, Suporte" required>
+                            <span class="erro-feedback" id="erroAssunto"></span>
+                        </div>
+                        
+                        <div class="campoGrupo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem detalhada..." required></textarea>
+                            <span class="erro-feedback" id="erroMensagem"></span>
+                        </div>
+                        
+                        <button type="submit" class="btnEnviar">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="mapaContainerGlobal">
+                <h3>A Nossa Localização</h3>
+                <div id="map"></div>
+            </div>
+        </main>
+    </section>
+    
+    <footer id="footerDoacao">
+        <div class="footerDoacaoBox">
+            <h3>Dados da Esperança</h3>
+            <p>A sua ajuda é fundamental. Fale connosco.</p>
+            <div class="redes-sociais">
+                <a href="#">📘 Facebook</a>
+                <a href="#">📸 Instagram</a>
+            </div>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Links Rápidos</h3>
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mapadosite.html">Mapa do Site</a>
+            <a href="termos.html">Termos e Condições</a>
+            <a href="privacidade.html">Política De Privacidade</a>
+        </div>
+        <div class="footerDoacaoBox">
+            <h3>Contactos</h3>
+            <p>📞 +244 923 000 000</p>
+            <p>📍 Luanda - Angola</p>
+        </div>
+    </footer>
+    
+    <button id="btnTopo" title="Voltar ao topo">▲</button>
+    
+</body>
+</html>
