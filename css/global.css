@@ -267,11 +267,11 @@ h1, h2, h3 {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 9999 !important;
 }
 
 .modal-content {
-    background: var(--card-bg);
+    background: var(--card-bg) !important;
     padding: 30px;
     border-radius: 10px;
     max-width: 450px;
