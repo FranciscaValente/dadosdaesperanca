@@ -4,7 +4,7 @@ Plataforma angolana criada para conectar hospitais, bancos de sangue e doadores.
 
 ## 🚀 Publicação
 
-Este site está publicado no GitHub Pages:[(https://franciscavalente.github.io/dadosdaesperanca)](https://franciscavalente.github.io/dadosdaesperanca)
+Este site está publicado no GitHub Pages: [https://franciscavalente.github.io/dadosdaesperanca](https://francisca.github.io/dadosdaesperanca)
 
 ## ✨ Funcionalidades
 
@@ -17,7 +17,8 @@ Este site está publicado no GitHub Pages:[(https://franciscavalente.github.io/d
 - HTML5
 - CSS3 (Variáveis CSS, Grid, Flexbox)
 - JavaScript (jQuery)
--Este Projecto foi desenvolvido para fins académicos na Cadeira de Interação Homem-Máquina.
 
 ---
 Desenvolvido por Francisca Valente.
+
+Este Projecto foi desenvolvido para fins académicos na cadeira de Interação Homem-Máquina.

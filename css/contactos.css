@@ -60,11 +60,18 @@
 }
 
 #mapaContainerGlobal #map {
-    height: 400px; 
+    height: 450px; 
     width: 100%; 
     max-width: 100%; 
     border-radius: 12px; 
     background: #eee;
     border: 1px solid var(--border-color);
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+#mapaContainerGlobal #map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }

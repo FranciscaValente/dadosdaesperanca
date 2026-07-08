@@ -163,6 +163,7 @@ $(document).ready(function() {
     initCarousel();
     validarFormulario('#formContacto');
     validarFormulario('#formAgendar');
+
     
     var modal = $('#modalTermos');
     var checkTermos = $('#checkTermos');
@@ -170,10 +171,13 @@ $(document).ready(function() {
     var btnContinuar = $('#btnContinuar');
 
     if (modal.length > 0) {
-
+        
         if (!localStorage.getItem('termosAceitos')) {
-            modal.css('display', 'flex');
-            $('body').css('overflow', 'hidden'); 
+            
+            setTimeout(function() {
+                modal.css('display', 'flex');
+                $('body').css('overflow', 'hidden');
+            }, 500);
         }
 
         function validarChecks() {
@@ -196,12 +200,4 @@ $(document).ready(function() {
             }
         });
     }
-});
-
-    
-    
-    
-    
-    
-    initMap();
 });
