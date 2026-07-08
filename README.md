@@ -17,6 +17,7 @@ Este site está publicado no GitHub Pages:[(https://franciscavalente.github.io/d
 - HTML5
 - CSS3 (Variáveis CSS, Grid, Flexbox)
 - JavaScript (jQuery)
+-Este Projecto foi desenvolvido para fins académicos na Cadeira de Interação Homem-Máquina.
 
 ---
 Desenvolvido por Francisca Valente.
